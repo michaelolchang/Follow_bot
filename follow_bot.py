@@ -14,8 +14,9 @@ driver = webdriver.Firefox()
 url = "https://www.instagram.com/accounts/login/"
 driver.get(url)
 
-username = "tensuixx"
-password = "1234567m"
+# Add your username and password inbetween ""
+username = ""
+password = ""
 
 usr_element = wait(driver,10).until(EC.presence_of_element_located((By.NAME, "username")))
 pw_element = driver.find_element_by_name("password")
